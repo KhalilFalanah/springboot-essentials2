@@ -4,7 +4,7 @@ import br.khalil.projectspringbootessentials.domain.Anime;
 
 import java.util.List;
 
-//Representa o DataBase
+//.7
 public interface AnimeRepository {
     List<Anime> listAll();
 }
