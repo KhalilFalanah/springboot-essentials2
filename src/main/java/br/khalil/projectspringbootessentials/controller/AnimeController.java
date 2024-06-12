@@ -48,4 +48,10 @@ public class AnimeController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
+    @PutMapping //.13 Não precisamos colocar nenhum Path pois temos apenas um PutMapping
+    public ResponseEntity<Void> replace(@RequestBody Anime anime){//.11
+        animeService.replace(anime);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }//.14 O Put da replace em um objeto. Ele substitui o existente;
+
 }
